@@ -1,0 +1,48 @@
+.dashboard__wrapper {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dashboard__nav {
+
+}
+
+.dashboard__ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.dashboard__li {
+    
+}
+
+.dashboard__link {
+    display: flex;
+}
+
+.dashboard__button {
+    width: 20rem;
+    height: 7rem;
+    font-size: 100%;
+    background: #2d5333;
+    border: none;
+    color: #eee;
+    border-radius: 5rem;
+    transition: 2s all;
+}
+
+.dashboard__message {
+    width: 2rem;
+    height: 2rem;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 80%;
+    transform: translateY(-8px);
+}
