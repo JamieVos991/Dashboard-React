@@ -3,9 +3,10 @@
 }
 
 .header {
-    height: 20%;
+    
     display: flex;
     align-items: center;
+    padding-bottom: 4rem;
 }
 
 .header__h1 {
@@ -14,7 +15,6 @@
 
 .productsList {
     list-style: none;
-    height: 80%;
     display: flex;
     gap: 4rem;
     flex-wrap: wrap;
@@ -27,6 +27,9 @@
     border: 0.5rem dashed rgb(255, 255, 255, 0.5);
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
 }
 
 .productsList__button {
@@ -39,3 +42,18 @@
     background-color: orange;
 }
  
+.productsList__text {
+    font-size: 80%;
+}
+
+.productsList_img {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.productsList__imageText {
+    position: absolute;
+    left: 37%;
+    bottom: 2rem;
+}

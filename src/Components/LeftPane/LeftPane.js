@@ -12,7 +12,7 @@ const LeftPane = ({ navigationListItems, buttonText }) => {
         return (
             <li key={object.name} className="dashboard__li">
                 <a href="" className="dashboard__link">{object.name}
-                    {message}
+                    {/* {message} */}
                 </a>
             </li>
         );

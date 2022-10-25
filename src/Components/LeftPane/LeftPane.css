@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: -1rem 0 5rem 0 #212121;
+    border-bottom-left-radius: 5rem;
+    border-top-left-radius: 5rem;
 }
 
 .dashboard__nav {
@@ -43,6 +46,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 80%;
-    transform: translateY(-8px);
+    font-size: 75%;
+    transform: translateX(10px);
 }
