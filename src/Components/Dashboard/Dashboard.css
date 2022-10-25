@@ -1,7 +1,7 @@
 .dashboard {
     width: 90%;
     min-height: 90vh;
-    background: linear-gradient(320deg, #227315, #3c5ca2);
+    background: rgba(0, 0, 0, 0.7);
     display: grid;
     grid-template-columns: 30% 70%;
     border-radius: 5rem;
