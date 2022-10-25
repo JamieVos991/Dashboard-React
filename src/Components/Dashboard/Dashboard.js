@@ -5,7 +5,7 @@ import Tyranitar from "../../img/tyranitar.png";
 import Cloyster from "../../img/cloyster.png";
 import React from "react";
 import Popup from "../Popup/Popup";
-
+import Pokemons from "../Data/Pokemons";
 class Dashboard extends React.Component {
 
     constructor(props) {
@@ -28,6 +28,18 @@ class Dashboard extends React.Component {
             {
                 name: "Cloyster",
                 img: Cloyster
+            },
+            {
+                name: "Charmander",
+                img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+            },
+            {
+                name: "Bulbasaur",
+                img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+            },
+            {
+                name: "Squirtle",
+                img: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
             },
         ];
         this.setState({ productCards: productCards })

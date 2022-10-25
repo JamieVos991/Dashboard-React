@@ -16,7 +16,10 @@ body {
 	font-size: 2rem;
 	font-family: sans-serif;
 	color: #eee;
-	background-color: wheat;
+	background: url(../../img/Pixel.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 2rem;
 }
 
 #root {

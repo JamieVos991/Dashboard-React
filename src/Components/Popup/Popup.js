@@ -13,6 +13,7 @@ class Popup extends React.Component {
     }
 
     updateProducts = () => {
+        console.log("hey");
         if (this.state.input !== "") {
             this.props.addButtonClicked(this.state.input);
         }
@@ -20,35 +21,31 @@ class Popup extends React.Component {
 
     render() {
         return (
-            <article className="pokeball">
-                <div className="pokeball_up">
+            <>
+                <article className="pokeball">
+                    <div className="pokeball_up">
 
-                </div>
-                <div className="pokeball_middle">
-                    <div className="pokeball_button">
-                        <div className="pokeball_button_inner">
+                    </div>
+                    <div onClick={this.updateProducts} className="pokeball_middle">
+                        <div className="pokeball_button">
+                            <div className="pokeball_button_inner">
+
+                            </div>
+                        </div>
+
+                        <div className="pokeball_middle_up">
 
                         </div>
                     </div>
-
-                    <div className="pokeball_middle_up">
+                    <div className="pokeball_down">
 
                     </div>
-                </div>
-                <div className="pokeball_down">
+                </article>
+                <input onChange={this.input} type="text" value={this.state.input} className="popup_input" id="name"></input>
+            </>
 
-                </div>
-            </article>
         );
     }
 }
 
 export default Popup;
-
-
-// <div className="popup__wrapper">
-// <label htmlFor="name" className="popup_label">Naam</label>
-// <input onChange={this.input} type="text" value={this.state.input} className="popup_input" id="name"></input>
-// </div>
-//
-//<input onChange={this.input} type="text" value={this.state.input} className="popup_input" id="name"></input>
