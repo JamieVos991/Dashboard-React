@@ -5,7 +5,6 @@ import Tyranitar from "../../img/tyranitar.png";
 import Cloyster from "../../img/cloyster.png";
 import React from "react";
 import Popup from "../Popup/Popup";
-import Pokemons from "../Data/Pokemons";
 class Dashboard extends React.Component {
 
     constructor(props) {

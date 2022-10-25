@@ -1,4 +1,5 @@
 import "./RightPane.css";
+import logo from "../../img/logo.png";
 
 const RightPane = ({ onButtonClicked, headerText, buttonSymbol, buttonText, productCards }) => {
 
@@ -26,7 +27,7 @@ const RightPane = ({ onButtonClicked, headerText, buttonSymbol, buttonText, prod
     return (
         <section className="productsWrapper">
             <header className="header">
-                <h1 className="header__h1">{headerText || "Placeholder"}</h1>
+               <img src={logo} className="products__logo"></img>
             </header>
             <ul className="productsList">
                 {productCardsToBeRendered}

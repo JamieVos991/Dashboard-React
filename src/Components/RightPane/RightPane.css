@@ -20,6 +20,10 @@
     flex-wrap: wrap;
 }
 
+.products__logo {
+    width: 30%;
+}
+
 .productsList__item {
     width: 30rem;
     height: 40rem;
