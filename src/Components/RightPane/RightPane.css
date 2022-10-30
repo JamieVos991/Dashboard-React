@@ -38,11 +38,12 @@
 .productsList__button {
     width: 8rem;
     height: 8rem;
+    color: #212121;
     border-radius: 50%;
     font-size: 150%;
     border: none;
     outline: none;
-    background-color: orange;
+    background-color: #eee;
 }
  
 .productsList__text {

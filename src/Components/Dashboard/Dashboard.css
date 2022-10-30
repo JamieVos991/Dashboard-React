@@ -4,6 +4,5 @@
     background: rgba(0, 0, 0, 0.7);
     display: grid;
     grid-template-columns: 30% 70%;
-    border-radius: 5rem;
 }
 

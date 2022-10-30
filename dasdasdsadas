@@ -1,0 +1,41 @@
+[33mcommit fc44c200d89b11d28629de246d593dec3edfc82e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Jamie Vos <Jamievos100@gmail.com>
+Date:   Tue Oct 25 23:34:56 2022 +0200
+
+    rightpane
+
+[33mcommit 204f7d1401fc27280844a5d94bb1e82b02f570e8[m
+Author: Jamie Vos <Jamievos100@gmail.com>
+Date:   Tue Oct 25 23:31:33 2022 +0200
+
+    logo
+
+[33mcommit bb6cf50360fafb839fe3989125071d5c1b6c3d50[m
+Author: Jamie Vos <Jamievos100@gmail.com>
+Date:   Tue Oct 25 23:20:29 2022 +0200
+
+    CSS
+
+[33mcommit 216070d434d621f864e427555dd93fb13ceb94fc[m
+Author: Jamie Vos <Jamievos100@gmail.com>
+Date:   Tue Oct 25 17:53:47 2022 +0200
+
+    poke props
+
+[33mcommit d9c2818a4fad5dc3aa2f307507cbff61377dca8d[m
+Author: Jamie Vos <Jamievos100@gmail.com>
+Date:   Tue Oct 25 15:56:21 2022 +0200
+
+    Popup pokeball
+
+[33mcommit 8a684391cc0dce04ab60ee97fd20796ab3834567[m
+Author: Jamie Vos <Jamievos100@gmail.com>
+Date:   Tue Oct 18 19:25:32 2022 +0200
+
+    Styling of dashboard + props
+
+[33mcommit 5282159b716d859b9d8bdb37b048ef0662e5c602[m
+Author: Jamie Vos <Jamievos100@gmail.com>
+Date:   Tue Oct 18 14:34:21 2022 +0200
+
+    Initialize project using Create React App

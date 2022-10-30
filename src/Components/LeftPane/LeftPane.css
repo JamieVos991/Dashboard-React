@@ -4,12 +4,11 @@
     flex-direction: column;
     justify-content: space-between;
     box-shadow: inset -1rem 0 5rem 0 #212121;
-    border-bottom-left-radius: 5rem;
-    border-top-left-radius: 5rem;
+
 }
 
 .dashboard__nav {
-
+    font-size: 130%;
 }
 
 .dashboard__ul {

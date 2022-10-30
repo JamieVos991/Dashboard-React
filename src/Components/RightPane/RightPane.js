@@ -1,7 +1,7 @@
 import "./RightPane.css";
 import logo from "../../img/logo.png";
 
-const RightPane = ({ onButtonClicked, headerText, buttonSymbol, buttonText, productCards }) => {
+const RightPane = ({ onButtonClicked, buttonSymbol, buttonText, productCards }) => {
 
     let addProduct = () => {
         onButtonClicked();
@@ -10,14 +10,14 @@ const RightPane = ({ onButtonClicked, headerText, buttonSymbol, buttonText, prod
     let productCardsToBeRendered = productCards.map(product => {
         if (product.name === "Placeholder") {
             return (
-                <li className="productsList__item">
+                <li key={product.id} className="productsList__item">
                     <button onClick={addProduct} className="productsList__button">{buttonSymbol || "*"}</button>
                     <p className="productsList__text">{buttonText || "Lorem Ipsum"}</p>
                 </li>
             );
         }
         return (
-            <li className="productsList__item">
+            <li key={product.id} className="productsList__item">
                <img className="productsList_img" src={product.img} alt={product.name}></img>
                <p className="productsList__imageText">{product.name}</p>
             </li>

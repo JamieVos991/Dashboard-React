@@ -1,10 +1,25 @@
+// CSS
 import "./Dashboard.css";
+
+// Import data 
+import ProductsObject from "../../Data/Products";
+
+// Helper 
+import ChooseImage from "../../Helpers/ChooseImage";
+
+// Leftpane
 import LeftPane from "../LeftPane/LeftPane";
+
+// Rightpane
 import RightPane from "../RightPane/RightPane";
-import Tyranitar from "../../img/tyranitar.png";
-import Cloyster from "../../img/cloyster.png";
+
+// Import React
 import React from "react";
+
+// Popup
 import Popup from "../Popup/Popup";
+
+
 class Dashboard extends React.Component {
 
     constructor(props) {
@@ -16,36 +31,15 @@ class Dashboard extends React.Component {
     }
 
     componentDidMount() {
-        let productCards = [
-            {
-                name: "Placeholder"
-            },
-            {
-                name: "Tyranitar",
-                img: Tyranitar
-            },
-            {
-                name: "Cloyster",
-                img: Cloyster
-            },
-        ];
-        this.setState({ productCards: productCards })
+        this.setState({ productCards: ProductsObject.Products })
     }
 
     addButtonClicked = (inputFromPopup) => {
-        let toBeAddedImage;
-        switch(inputFromPopup){
-            case("Tyranitar"):
-                toBeAddedImage = Tyranitar;
-                break;
-            case("Cloyster"):
-                toBeAddedImage = Cloyster;
-                break;
-        }
+        let imageFromHelper = ChooseImage(inputFromPopup);
         let toBeAdded = [
             {
                 name: inputFromPopup,
-                img: toBeAddedImage
+                img: imageFromHelper
             }
         ]
 
