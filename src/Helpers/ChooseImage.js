@@ -1,5 +1,7 @@
+// Images
 import Tyranitar from "../img/tyranitar.png";
 import Cloyster from "../img/cloyster.png";
+
 
 function ChooseImage(inputFromPopup) {
     let toBeAddedImage;

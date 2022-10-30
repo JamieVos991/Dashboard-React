@@ -1,5 +1,9 @@
-import React from "react";
+// CSS
 import "./Popup.css";
+
+// Import React
+import React from "react";
+
 
 class Popup extends React.Component {
 

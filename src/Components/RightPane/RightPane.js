@@ -1,10 +1,15 @@
 import "./RightPane.css";
 import logo from "../../img/logo.png";
+import ProductCard from "../ProductCard/ProductCard";
 
-const RightPane = ({ onButtonClicked, buttonSymbol, buttonText, productCards }) => {
+const RightPane = ({ onButtonClicked, buttonSymbol, buttonText, productCards}) => {
 
     let addProduct = () => {
         onButtonClicked();
+    }
+
+    let onCardClicked = (idFromCard) => {
+        
     }
 
     let productCardsToBeRendered = productCards.map(product => {
@@ -17,10 +22,7 @@ const RightPane = ({ onButtonClicked, buttonSymbol, buttonText, productCards }) 
             );
         }
         return (
-            <li key={product.id} className="productsList__item">
-               <img className="productsList_img" src={product.img} alt={product.name}></img>
-               <p className="productsList__imageText">{product.name}</p>
-            </li>
+           <ProductCard onCardClicked={onCardClicked} key={product.id} name={product.name} id={product.id} productImg={product.img}/>
         );
     });
 

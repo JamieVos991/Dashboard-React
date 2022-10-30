@@ -1,4 +1,6 @@
+// CSS
 import "./LeftPane.css";
+
 
 const LeftPane = ({ navigationListItems, buttonText }) => {
 
