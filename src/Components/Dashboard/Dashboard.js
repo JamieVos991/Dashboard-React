@@ -1,22 +1,19 @@
 // CSS
 import "./Dashboard.css";
 
-// Import data 
+// Import React
+import React from "react";
+
+// Data 
 import ProductsObject from "../../Data/Products";
+import NavigationDataObject from "../../Data/NavigationData";
 
 // Helper 
 import ChooseImage from "../../Helpers/ChooseImage";
 
-// Leftpane
+// Components
 import LeftPane from "../LeftPane/LeftPane";
-
-// Rightpane
 import RightPane from "../RightPane/RightPane";
-
-// Import React
-import React from "react";
-
-// Popup
 import Popup from "../Popup/Popup";
 
 
@@ -38,6 +35,7 @@ class Dashboard extends React.Component {
         let imageFromHelper = ChooseImage(inputFromPopup);
         let toBeAdded = [
             {
+                id: this.state.productCards.length + 1,
                 name: inputFromPopup,
                 img: imageFromHelper
             }
@@ -55,38 +53,10 @@ class Dashboard extends React.Component {
     }
 
     render() {
-        let navigationListItems =
-            [
-                {
-                    name: "Home",
-                    message: 0,
-                },
-
-                {
-                    name: "Games",
-                    message: 3,
-                },
-
-                {
-                    name: "Pokemons",
-                    message: 0,
-                },
-
-                {
-                    name: "FAQ",
-                    message: 1,
-                },
-
-                {
-                    name: "Contact",
-                    message: 2,
-                },
-            ];
-
         if (this.state.open === true) {
             return (
                 <article className="dashboard">
-                    <LeftPane navigationListItems={navigationListItems} buttonText="Go premium!" />
+                    <LeftPane navigationListItems={NavigationDataObject.NavigationData} buttonText="Go premium!" />
                     <RightPane onButtonClicked={this.onButtonClicked} productCards={this.state.productCards} headerText="Mijn Pokemons" buttonSymbol="+" buttonText="Voeg hier je pokemon toe" />
                 </article>
 
