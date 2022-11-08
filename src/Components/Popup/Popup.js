@@ -1,40 +1,45 @@
-// CSS
 import "./Popup.css";
-
-// Import React
 import React from "react";
 
 
 class Popup extends React.Component {
 
-    constructor(props) {
+    constructor(props){
         super(props);
-        this.state = { input: "" }
+        this.state = {input: ""}
     }
 
-    input = (event) => {
-        this.setState({ input: event.target.value });
+    componentDidMount(){
+        this.setState({ input: this.props.cardClicked.name })
     }
 
-    updateProducts = () => {
-        if (this.state.input !== "") {
+    input = (event) =>{
+        this.setState({input: event.target.value});
+    }
+
+    addProduct = () =>{
+        if(this.state.input !== ""){
             this.props.addButtonClicked(this.state.input);
         }
     }
 
-    render() {
+    editProduct = () => {
+        this.props.editButtonClicked(this.state.input);
+    }
+    
+    render(){
+        let button = <div onClick={this.addProduct} className="pokeball_button"></div>;
+        if(this.props.editMode === true){
+            button = <div onClick={this.editProduct} className="pokeball_button"></div>;
+        }
         return (
             <>
                 <article className="pokeball">
                     <div className="pokeball_up">
 
                     </div>
-                    <div onClick={this.updateProducts} className="pokeball_middle">
-                        <div className="pokeball_button">
-                            <div className="pokeball_button_inner">
-
-                            </div>
-                        </div>
+                    <div className="pokeball_middle">
+                        {button}
 
                         <div className="pokeball_middle_up">
 

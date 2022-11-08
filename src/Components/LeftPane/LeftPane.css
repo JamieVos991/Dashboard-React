@@ -19,7 +19,7 @@
 }
 
 .dashboard__li {
-    
+    font-size: 2.2rem;
 }
 
 .dashboard__link {
@@ -27,13 +27,12 @@
 }
 
 .dashboard__button {
-    width: 20rem;
-    height: 7rem;
-    font-size: 100%;
+    width: 15rem;
+    height: 5rem;
+    font-size: 85%;
     background: #eee;
     border: none;
     color: #212121;
-    border-radius: 5rem;
     transition: 2s all;
 }
 
@@ -47,4 +46,14 @@
     border-radius: 50%;
     font-size: 75%;
     transform: translateX(10px);
+}
+
+@media screen and (max-width: 1000px) {
+    .dashboard__li {
+        font-size: 2rem;
+    }
+
+    .dashboard__wrapper {
+        flex-direction: row;
+    }
 }

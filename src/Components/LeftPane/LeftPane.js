@@ -1,30 +1,22 @@
-// CSS
 import "./LeftPane.css";
 
 
-const LeftPane = ({ navigationListItems, buttonText }) => {
-
-    let toBeRenderedNavigationListItems = navigationListItems.map(object => {
-        let message = null;
+const LeftPane = ({navigationListItems, buttonText}) => {
+    let toBeRenderedNavigationListemItems = navigationListItems.map(object => {
         
-        if (object.message > 0) {
-            message = <div className="dashboard__message">{object.message}</div>
-        }
-
-        return (
+        return(
             <li key={object.name} className="dashboard__li">
-                <a href="" className="dashboard__link">{object.name}
-                    {/* {message} */}
-                </a>
+                <a href="/#" className="dashboard__link">{object.name}</a>
             </li>
         );
     });
+
 
     return (
         <section className="dashboard__wrapper">
             <nav className="dashboard__nav">
                 <ul className="dashboard__ul">
-                   {toBeRenderedNavigationListItems}
+                   {toBeRenderedNavigationListemItems}
                 </ul>
             </nav>
             <button className="dashboard__button">{buttonText || "Klik hier"}</button>

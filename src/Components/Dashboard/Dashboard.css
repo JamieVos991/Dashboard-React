@@ -1,8 +1,13 @@
 .dashboard {
     width: 90%;
     min-height: 90vh;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
     display: grid;
     grid-template-columns: 30% 70%;
 }
 
+@media screen and (max-width: 1000px){
+    .dashboard {
+        grid-template-columns: 100%
+    }
+}

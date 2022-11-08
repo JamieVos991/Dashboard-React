@@ -13,9 +13,10 @@ html {
 
 body {
 	font-size: 2rem;
+	padding: 2rem;
 	font-family: sans-serif;
 	color: #eee;
-	background: url(../../img/background.png);
+	background: linear-gradient( #E14D2A, #FD841F);
 	background-position: center;
 }
 
